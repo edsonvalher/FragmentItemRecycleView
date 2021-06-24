@@ -45,6 +45,7 @@ public class MyRestauranteRecyclerViewAdapter extends RecyclerView.Adapter<MyRes
         holder.txtViewDireccion.setText(holder.mItem.getDireccion());
         holder.rtgBarValoracion.setRating(holder.mItem.getValoracion());
 
+        //esto se agrego en el gradle module como dependencia
         Glide.with(ctx)
                 .load(holder.mItem.getUrlPhoto())
                 .centerCrop()
